@@ -3,196 +3,168 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Take — pistes d'icône</title>
-<meta name="description" content="Pistes d'icône pour l'app Take, autour de la planète.">
-<meta property="og:title" content="Take — pistes d'icône">
-<meta property="og:image" content="img/I1.jpg">
+<title>La planète de Take</title>
+<meta name="description" content="16 pistes d'icône pour l'app Take, autour de la planète.">
+<meta property="og:title" content="La planète de Take">
+<meta property="og:image" content="img/P15.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Archivo:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Archivo:wght@400;500;700&display=swap">
 <style>
-:root{color-scheme:light;--ground:#F5F4F0;--surface:#FFFFFF;--line:#E3E1DA;--text:#14131A;--muted:#6E6B75;--accent:#5B43F0}
+:root{color-scheme:light;--ground:#F2F1EE;--text:#0B0B0C;--muted:#6B6A66;--body:#3A3935;--yes:#15803D}
 *{box-sizing:border-box}
-body{margin:0;background:var(--ground);color:var(--text);font:16px/1.55 Archivo,system-ui,sans-serif;padding-inline:clamp(16px,4vw,56px);padding-block:56px 80px}
-.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:64px}
-header{display:flex;flex-direction:column;gap:18px;max-width:780px}
-.eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-h1{font:800 clamp(44px,7vw,88px)/.98 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.035em;margin:0;text-wrap:balance}
-h2{font:800 clamp(28px,3.4vw,40px)/1.05 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.02em;margin:0}
-.lede{margin:0;font-size:19px;color:#3B3942;max-width:62ch}
-.then{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
-.then figure{margin:0;display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--muted)}
-.then img{width:88px;height:88px;border-radius:20px;display:block}
-section{display:flex;flex-direction:column;gap:28px}
-section > p{margin:0;color:#3B3942;max-width:62ch}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:44px 28px}
-.card{display:flex;flex-direction:column;gap:14px}
-.icon{width:100%;max-width:100%;height:auto;aspect-ratio:1;border-radius:22.5%;display:block;box-shadow:0 1px 2px rgba(20,19,26,.08),0 12px 32px rgba(20,19,26,.10)}
+body{margin:0;background:var(--ground);color:var(--text);font:16px/1.55 Archivo,system-ui,sans-serif;padding-inline:clamp(16px,4vw,64px);padding-block:56px 80px}
+.wrap{max-width:1320px;margin:0 auto;display:flex;flex-direction:column;gap:72px}
+.intro{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:start}
+.label{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.history{display:flex;flex-direction:column;gap:28px}
+.history figure{margin:0;display:flex;flex-direction:column;gap:10px}
+.history .first img{width:240px;max-width:100%;height:auto;border-radius:54px;display:block}
+.now{display:flex;gap:16px;align-items:center}
+.now img{width:110px;height:110px;border-radius:25px;flex-shrink:0;display:block}
+.now p{margin:0;font-size:15px;color:var(--body)}
+h1{margin:0;font:700 clamp(44px,6vw,64px)/1.04 Poppins,system-ui,sans-serif;letter-spacing:-.03em;text-wrap:balance}
+.lede{margin:24px 0 0;font-size:19px;line-height:1.55;max-width:62ch}
+.selection{margin-top:36px;display:flex;flex-direction:column;gap:16px}
+.selection .label{color:var(--yes)}
+.sels{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:20px;max-width:820px}
+.sel{margin:0;display:flex;flex-direction:column;gap:10px;font-size:15px;font-weight:700}
+section{display:flex;flex-direction:column;gap:32px}
+.head{display:flex;flex-direction:column;gap:8px}
+h2{margin:0;font:700 clamp(30px,3.5vw,42px)/1.1 Poppins,system-ui,sans-serif;letter-spacing:-.02em}
+.head p{margin:0;font-size:17px;color:var(--body);max-width:62ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:48px 36px}
+.card{display:flex;flex-direction:column;gap:16px}
+svg{display:block}
+.icon{width:100%;max-width:100%;height:auto;aspect-ratio:1;border-radius:22.5%;box-shadow:0 1px 0 rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.12);overflow:hidden}
 .sizes{display:flex;gap:12px;align-items:flex-end}
-.sizes img{display:block}
-.s60{width:60px;height:60px;border-radius:13.5px}.s40{width:40px;height:40px;border-radius:9px}.s20{width:20px;height:20px;border-radius:4.5px}
-h3{margin:2px 0 0;font:600 20px/1.25 "Bricolage Grotesque",system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
-.id{font:500 13px Archivo,sans-serif;color:var(--muted)}
-.pick{font:600 11px Archivo,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:#ECE8FF;border-radius:999px;padding:3px 9px}
-.card p{margin:0;color:#4A4852;font-size:15px;max-width:40ch}
-.dark{background:#0B0C0F;color:#ECEDF0;border-radius:28px;padding:clamp(24px,4vw,48px)}
-.dark > p,.dark .card p{color:#B7BAC2}.dark .id{color:#8B8F99}.dark .pick{background:#1D2A22;color:#4ADE80}
-footer{color:var(--muted);font-size:14px}
+.s60{width:64px;height:64px;border-radius:15px}.s40{width:40px;height:40px;border-radius:9px}.s20{width:22px;height:22px;border-radius:5px}
+h3{margin:0;font:700 19px/1.3 Archivo,system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+.id{font-size:13px;font-weight:700;color:var(--muted)}
+.pick{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--yes)}
+.card p{margin:0;font-size:15px;line-height:1.45;color:var(--body);max-width:40ch}
+@media (max-width:720px){.intro{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<header>
-<span class="eyebrow">Take · nouvelle icône</span>
-<h1>Le monde donne son avis.</h1>
-<p class="lede">Take pose une question à la planète entière, et elle répond : oui, non, une note. Le logo actuel, une sphère en points, fait penser à une app de son. Ces pistes remettent la planète au centre, sans un mot, et lui font faire un geste : lever un carton, se plier en deux, appuyer sur un bouton.</p>
-<div class="then"><figure><img src="img/origin.jpg" alt="Premier logo de Take : take au-dessus de l'horizon de la Terre"><figcaption>Le premier logo</figcaption></figure><figure><img src="img/current.jpg" alt="Logo actuel : sphère en trame de points"><figcaption>Le logo actuel</figcaption></figure></div>
-</header>
+<div class="intro">
+<div class="history">
+<figure class="first"><span class="label">Le tout premier · 6 août</span><img src="img/origin.jpg" alt="Premier logo de Take : le mot take au-dessus de l'horizon de la Terre" width="512" height="512"></figure>
+<figure><span class="label">Aujourd'hui</span><div class="now"><img src="img/current.jpg" alt="Logo actuel : sphère en trame de points" width="512" height="512"><p>La trame de points ressemble à une grille de haut-parleur. La planète a disparu.</p></div></figure>
+</div>
+<div>
+<h1>La planète de Take</h1>
+<p class="lede">Take pose une question au monde entier, et le monde répond : oui, non, une note. Le premier logo le disait avec la Terre vue de l'espace. Ces 16 pistes repartent de là, avec la vraie Terre de l'app (les continents du globe du jeu, son graphite, son bord éclairé), puis lui font dire ce qu'elle fait : écouter, hésiter, choisir.</p>
+<div class="selection"><span class="label">La sélection</span><div class="sels"><figure class="sel"><svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Horizon partagé"><image href="img/P15.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg><figcaption><span class="id">P15</span> Horizon partagé</figcaption></figure><figure class="sel"><svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Nuit des takes"><image href="img/P4.jpg" x="0" y="0" width="100" height="100"/></svg><figcaption><span class="id">P4</span> Nuit des takes</figcaption></figure><figure class="sel"><svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Deux lumières"><image href="img/P5.jpg" x="0" y="0" width="100" height="100"/></svg><figcaption><span class="id">P5</span> Deux lumières</figcaption></figure><figure class="sel"><svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Anneau des avis"><image href="img/P13.jpg" x="0" y="0" width="100" height="100"/><defs><mask id="mP13s"><rect width="100" height="100" fill="#fff"/><circle cx="50" cy="50" r="27" fill="#000"/></mask></defs><g transform="rotate(-18 50 50)"><path d="M5 50 A45 12 0 0 1 95 50" stroke="#22C55E" stroke-width="2.6" fill="none" mask="url(#mP13s)"/><path d="M5 50 A45 12 0 0 0 95 50" stroke="#EF4444" stroke-width="2.6" fill="none"/></g></svg><figcaption><span class="id">P13</span> Anneau des avis</figcaption></figure><figure class="sel"><svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône La question au monde"><image href="img/P6.jpg" x="0" y="0" width="100" height="100"/><path d="M33 36 Q33 17 50 17 Q67 17 67 33 Q67 45 56 50 Q50 53 50 61 V64" stroke="#EDEDF0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><figcaption><span class="id">P6</span> La question au monde</figcaption></figure></div></div>
+</div>
+</div>
 <section>
-<h2>La planète fait un geste</h2>
-<p>Dix pistes en couleur. Chaque icône est montrée en grand, puis à 60, 40 et 20 px, les tailles réelles sur un téléphone.</p>
+<div class="head"><span class="label">Pistes P1–P8</span><h2>La planète, le mot, la lumière</h2><p>On repart du tout premier logo : la vraie Terre de l'app, dans l'espace, et ce qu'elle raconte. Chaque icône est montrée en grand, puis à 64, 40 et 22 px.</p></div>
 <div class="grid">
 <article class="card">
-<img class="icon" src="img/I1.jpg" alt="Icône « Le carton levé »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/I1.jpg" alt="" class="s60"><img src="img/I1.jpg" alt="" class="s40"><img src="img/I1.jpg" alt="" class="s20"></div>
-<h3><span class="id">I1</span>Le carton levé<span class="pick">Coup de cœur</span></h3>
-<p>Le monde levé comme un carton de vote : la planète dit son avis.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Horizon"><image href="img/P1.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P1.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P1.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P1.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg></div>
+<h3><span class="id">P1</span>Horizon</h3>
+<p>Le tout premier logo, redessiné : le mot au-dessus, le bord de la planète qui s&#x27;allume. On garde ce qui marchait.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/I2.jpg" alt="Icône « Terrain commun »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/I2.jpg" alt="" class="s60"><img src="img/I2.jpg" alt="" class="s40"><img src="img/I2.jpg" alt="" class="s20"></div>
-<h3><span class="id">I2</span>Terrain commun<span class="pick">Coup de cœur</span></h3>
-<p>Un cercle vert, un cercle rouge ; là où ils se croisent, il y a le monde. Take, c&#x27;est l&#x27;endroit où les avis se rencontrent.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Aube verte"><image href="img/P2.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P2.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P2.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P2.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg></div>
+<h3><span class="id">P2</span>Aube verte</h3>
+<p>Le jour se lève sur la planète, en vert : le oui, l&#x27;élan. Même composition, une couleur de plus.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/I3.jpg" alt="Icône « Le fruit »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/I3.jpg" alt="" class="s60"><img src="img/I3.jpg" alt="" class="s40"><img src="img/I3.jpg" alt="" class="s20"></div>
-<h3><span class="id">I3</span>Le fruit</h3>
-<p>La Terre coupée comme un agrume : prends ta part du monde.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône La Terre seule"><image href="img/P3.jpg" x="0" y="0" width="100" height="100"/></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P3.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P3.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P3.jpg" x="0" y="0" width="100" height="100"/></svg></div>
+<h3><span class="id">P3</span>La Terre seule</h3>
+<p>Notre Terre, celle de l&#x27;app (les continents du globe du jeu), éclairée par le haut. L&#x27;icône la plus directe.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/I4.jpg" alt="Icône « Plié en deux »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/I4.jpg" alt="" class="s60"><img src="img/I4.jpg" alt="" class="s40"><img src="img/I4.jpg" alt="" class="s20"></div>
-<h3><span class="id">I4</span>Plié en deux<span class="pick">Coup de cœur</span></h3>
-<p>Une question plie le monde : une moitié verte, une moitié rouge.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Nuit des takes"><image href="img/P4.jpg" x="0" y="0" width="100" height="100"/></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P4.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P4.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P4.jpg" x="0" y="0" width="100" height="100"/></svg></div>
+<h3><span class="id">P4</span>Nuit des takes<span class="pick">Sélection</span></h3>
+<p>Côté nuit, les villes s&#x27;allument en vert et en rouge : à toute heure, quelque part, quelqu&#x27;un donne son avis.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/I5.jpg" alt="Icône « Autocollant »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/I5.jpg" alt="" class="s60"><img src="img/I5.jpg" alt="" class="s40"><img src="img/I5.jpg" alt="" class="s20"></div>
-<h3><span class="id">I5</span>Autocollant</h3>
-<p>Le monde en sticker qu&#x27;on colle partout : social, léger, à partager.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Deux lumières"><image href="img/P5.jpg" x="0" y="0" width="100" height="100"/></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P5.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P5.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P5.jpg" x="0" y="0" width="100" height="100"/></svg></div>
+<h3><span class="id">P5</span>Deux lumières<span class="pick">Sélection</span></h3>
+<p>La Terre entre deux soleils : vert d&#x27;un côté, rouge de l&#x27;autre. Le monde entre deux avis.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/I6.jpg" alt="Icône « Pile ou face »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/I6.jpg" alt="" class="s60"><img src="img/I6.jpg" alt="" class="s40"><img src="img/I6.jpg" alt="" class="s20"></div>
-<h3><span class="id">I6</span>Pile ou face</h3>
-<p>La Terre en pièce qu&#x27;on lance : choisis ton côté.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône La question au monde"><image href="img/P6.jpg" x="0" y="0" width="100" height="100"/><path d="M33 36 Q33 17 50 17 Q67 17 67 33 Q67 45 56 50 Q50 53 50 61 V64" stroke="#EDEDF0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P6.jpg" x="0" y="0" width="100" height="100"/><path d="M33 36 Q33 17 50 17 Q67 17 67 33 Q67 45 56 50 Q50 53 50 61 V64" stroke="#EDEDF0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P6.jpg" x="0" y="0" width="100" height="100"/><path d="M33 36 Q33 17 50 17 Q67 17 67 33 Q67 45 56 50 Q50 53 50 61 V64" stroke="#EDEDF0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P6.jpg" x="0" y="0" width="100" height="100"/><path d="M33 36 Q33 17 50 17 Q67 17 67 33 Q67 45 56 50 Q50 53 50 61 V64" stroke="#EDEDF0" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
+<h3><span class="id">P6</span>La question au monde<span class="pick">Sélection</span></h3>
+<p>Un point d&#x27;interrogation dont le point est la Terre : Take pose une question à la planète.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/I7.jpg" alt="Icône « Le curseur »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/I7.jpg" alt="" class="s60"><img src="img/I7.jpg" alt="" class="s40"><img src="img/I7.jpg" alt="" class="s20"></div>
-<h3><span class="id">I7</span>Le curseur</h3>
-<p>La planète est le bouton du curseur d&#x27;avis : glisse, note, décide.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône t·a·ke"><rect width="100" height="100" fill="#050506"/><defs><clipPath id="cP7a"><circle cx="47" cy="53.5" r="10"/></clipPath></defs><image href="img/P7.jpg" x="31" y="37.5" width="32" height="32" clip-path="url(#cP7a)"/><rect x="55" y="43.5" width="4.2" height="20" rx="1" fill="#D6D6DA"/><text x="30" y="63.5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="30" fill="#D6D6DA">t</text><text x="74" y="63.5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="30" letter-spacing="-0.6" fill="#D6D6DA">ke</text></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#050506"/><defs><clipPath id="cP7b"><circle cx="47" cy="53.5" r="10"/></clipPath></defs><image href="img/P7.jpg" x="31" y="37.5" width="32" height="32" clip-path="url(#cP7b)"/><rect x="55" y="43.5" width="4.2" height="20" rx="1" fill="#D6D6DA"/><text x="30" y="63.5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="30" fill="#D6D6DA">t</text><text x="74" y="63.5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="30" letter-spacing="-0.6" fill="#D6D6DA">ke</text></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#050506"/><defs><clipPath id="cP7c"><circle cx="47" cy="53.5" r="10"/></clipPath></defs><image href="img/P7.jpg" x="31" y="37.5" width="32" height="32" clip-path="url(#cP7c)"/><rect x="55" y="43.5" width="4.2" height="20" rx="1" fill="#D6D6DA"/><text x="30" y="63.5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="30" fill="#D6D6DA">t</text><text x="74" y="63.5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="30" letter-spacing="-0.6" fill="#D6D6DA">ke</text></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#050506"/><defs><clipPath id="cP7d"><circle cx="47" cy="53.5" r="10"/></clipPath></defs><image href="img/P7.jpg" x="31" y="37.5" width="32" height="32" clip-path="url(#cP7d)"/><rect x="55" y="43.5" width="4.2" height="20" rx="1" fill="#D6D6DA"/><text x="30" y="63.5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="30" fill="#D6D6DA">t</text><text x="74" y="63.5" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="30" letter-spacing="-0.6" fill="#D6D6DA">ke</text></svg></div>
+<h3><span class="id">P7</span>t·a·ke</h3>
+<p>Le mot du premier logo, où le a devient la planète. Marche en icône comme en logotype.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/I8.jpg" alt="Icône « Hot take »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/I8.jpg" alt="" class="s60"><img src="img/I8.jpg" alt="" class="s40"><img src="img/I8.jpg" alt="" class="s20"></div>
-<h3><span class="id">I8</span>Hot take</h3>
-<p>Les côtes du monde brûlent : l&#x27;avis qui chauffe.</p>
-</article>
-<article class="card">
-<img class="icon" src="img/I9.jpg" alt="Icône « La capsule »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/I9.jpg" alt="" class="s60"><img src="img/I9.jpg" alt="" class="s40"><img src="img/I9.jpg" alt="" class="s20"></div>
-<h3><span class="id">I9</span>La capsule</h3>
-<p>Une pilule mi-verte mi-rouge avec le monde imprimé dessus.</p>
-</article>
-<article class="card">
-<img class="icon" src="img/I10.jpg" alt="Icône « Le gros bouton »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/I10.jpg" alt="" class="s60"><img src="img/I10.jpg" alt="" class="s40"><img src="img/I10.jpg" alt="" class="s20"></div>
-<h3><span class="id">I10</span>Le gros bouton<span class="pick">Coup de cœur</span></h3>
-<p>Un gros bouton en forme de monde : appuie, la planète répond.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône La Terre parle"><image href="img/P8.jpg" x="0" y="0" width="100" height="100"/></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P8.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P8.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P8.jpg" x="0" y="0" width="100" height="100"/></svg></div>
+<h3><span class="id">P8</span>La Terre parle</h3>
+<p>Le globe a une queue de bulle : c&#x27;est le monde qui prend la parole.</p>
 </article>
 </div>
 </section>
-<section class="dark">
-<h2>La planète vue de l'espace</h2>
-<p>Douze pistes plus sobres, rendues à partir de la vraie Terre de l'app : vert pour oui, rouge pour non.</p>
+<section>
+<div class="head"><span class="label">Pistes P9–P16</span><h2>La planète qui choisit</h2><p>La Terre prend parti : couper, entourer, éclairer, et une version à plat pour les petites tailles.</p></div>
 <div class="grid">
 <article class="card">
-<img class="icon" src="img/N1.jpg" alt="Icône « Une lumière posée »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N1.jpg" alt="" class="s60"><img src="img/N1.jpg" alt="" class="s40"><img src="img/N1.jpg" alt="" class="s20"></div>
-<h3><span class="id">N1</span>Une lumière posée</h3>
-<p>Un seul point vert s&#x27;allume sur la Terre : un take vient d&#x27;être posé, là.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Hublot"><image href="img/P9.jpg" x="0" y="0" width="100" height="100"/></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P9.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P9.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P9.jpg" x="0" y="0" width="100" height="100"/></svg></div>
+<h3><span class="id">P9</span>Hublot</h3>
+<p>Une bulle de parole ouverte sur la Terre, posée sur le vert du oui.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/N2.jpg" alt="Icône « Croissant vert »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N2.jpg" alt="" class="s60"><img src="img/N2.jpg" alt="" class="s40"><img src="img/N2.jpg" alt="" class="s20"></div>
-<h3><span class="id">N2</span>Croissant vert</h3>
-<p>La Terre à contre-jour, seul son bord s&#x27;éclaire en vert : le monde qui dit oui.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Un take s&#x27;élève"><image href="img/P10.jpg" x="0" y="0" width="100" height="100"/></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P10.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P10.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P10.jpg" x="0" y="0" width="100" height="100"/></svg></div>
+<h3><span class="id">P10</span>Un take s&#x27;élève</h3>
+<p>Un faisceau vert part d&#x27;un point de la planète : un avis publié d&#x27;ici, vu de partout.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/N3.jpg" alt="Icône « Lever de Terre »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N3.jpg" alt="" class="s60"><img src="img/N3.jpg" alt="" class="s40"><img src="img/N3.jpg" alt="" class="s20"></div>
-<h3><span class="id">N3</span>Lever de Terre</h3>
-<p>La Terre qui se lève au-dessus de la Lune : le monde vu de loin, en entier.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Éclipse"><image href="img/P11.jpg" x="0" y="0" width="100" height="100"/></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P11.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P11.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P11.jpg" x="0" y="0" width="100" height="100"/></svg></div>
+<h3><span class="id">P11</span>Éclipse</h3>
+<p>La Terre presque noire, seul son bord brille. Le plus sobre, le plus premium ; lisible en tout petit.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/N4.jpg" alt="Icône « Vue du pôle »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N4.jpg" alt="" class="s60"><img src="img/N4.jpg" alt="" class="s40"><img src="img/N4.jpg" alt="" class="s20"></div>
-<h3><span class="id">N4</span>Vue du pôle</h3>
-<p>La planète vue d&#x27;en haut, tous les continents autour du pôle : personne n&#x27;est au centre.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Terre tranchée"><image href="img/P12.jpg" x="0" y="0" width="100" height="100"/></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P12.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P12.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P12.jpg" x="0" y="0" width="100" height="100"/></svg></div>
+<h3><span class="id">P12</span>Terre tranchée</h3>
+<p>Une question coupe le monde en deux ; les tranches sont vertes et rouges.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/N5.jpg" alt="Icône « La ligne »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N5.jpg" alt="" class="s60"><img src="img/N5.jpg" alt="" class="s40"><img src="img/N5.jpg" alt="" class="s20"></div>
-<h3><span class="id">N5</span>La ligne</h3>
-<p>Une ligne verte fait le tour du monde : la question qui traverse la planète.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Anneau des avis"><image href="img/P13.jpg" x="0" y="0" width="100" height="100"/><defs><mask id="mP13a"><rect width="100" height="100" fill="#fff"/><circle cx="50" cy="50" r="27" fill="#000"/></mask></defs><g transform="rotate(-18 50 50)"><path d="M5 50 A45 12 0 0 1 95 50" stroke="#22C55E" stroke-width="2.6" fill="none" mask="url(#mP13a)"/><path d="M5 50 A45 12 0 0 0 95 50" stroke="#EF4444" stroke-width="2.6" fill="none"/></g></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P13.jpg" x="0" y="0" width="100" height="100"/><defs><mask id="mP13b"><rect width="100" height="100" fill="#fff"/><circle cx="50" cy="50" r="27" fill="#000"/></mask></defs><g transform="rotate(-18 50 50)"><path d="M5 50 A45 12 0 0 1 95 50" stroke="#22C55E" stroke-width="2.6" fill="none" mask="url(#mP13b)"/><path d="M5 50 A45 12 0 0 0 95 50" stroke="#EF4444" stroke-width="2.6" fill="none"/></g></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P13.jpg" x="0" y="0" width="100" height="100"/><defs><mask id="mP13c"><rect width="100" height="100" fill="#fff"/><circle cx="50" cy="50" r="27" fill="#000"/></mask></defs><g transform="rotate(-18 50 50)"><path d="M5 50 A45 12 0 0 1 95 50" stroke="#22C55E" stroke-width="2.6" fill="none" mask="url(#mP13c)"/><path d="M5 50 A45 12 0 0 0 95 50" stroke="#EF4444" stroke-width="2.6" fill="none"/></g></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P13.jpg" x="0" y="0" width="100" height="100"/><defs><mask id="mP13d"><rect width="100" height="100" fill="#fff"/><circle cx="50" cy="50" r="27" fill="#000"/></mask></defs><g transform="rotate(-18 50 50)"><path d="M5 50 A45 12 0 0 1 95 50" stroke="#22C55E" stroke-width="2.6" fill="none" mask="url(#mP13d)"/><path d="M5 50 A45 12 0 0 0 95 50" stroke="#EF4444" stroke-width="2.6" fill="none"/></g></svg></div>
+<h3><span class="id">P13</span>Anneau des avis<span class="pick">Sélection</span></h3>
+<p>Un anneau fait le tour de la Terre : vert derrière, rouge devant. Les avis circulent autour du monde.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/N6.jpg" alt="Icône « Aurore »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N6.jpg" alt="" class="s60"><img src="img/N6.jpg" alt="" class="s40"><img src="img/N6.jpg" alt="" class="s20"></div>
-<h3><span class="id">N6</span>Aurore</h3>
-<p>Une aurore verte au-dessus du pôle : la planète qui réagit.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône À plat"><image href="img/P14.jpg" x="0" y="0" width="100" height="100"/></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P14.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P14.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P14.jpg" x="0" y="0" width="100" height="100"/></svg></div>
+<h3><span class="id">P14</span>À plat</h3>
+<p>La même Terre en deux tons, sans lumière : pour 20 px, le monochrome Android, les notifications.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/N7.jpg" alt="Icône « Deux lunes »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N7.jpg" alt="" class="s60"><img src="img/N7.jpg" alt="" class="s40"><img src="img/N7.jpg" alt="" class="s20"></div>
-<h3><span class="id">N7</span>Deux lunes<span class="pick">Coup de cœur</span></h3>
-<p>La Terre et ses deux lunes, une verte, une rouge : oui et non tournent autour du monde.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Horizon partagé"><image href="img/P15.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P15.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P15.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P15.jpg" x="0" y="0" width="100" height="100"/><text x="50" y="37" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="23" letter-spacing="-0.6" fill="#D6D6DA">take</text></svg></div>
+<h3><span class="id">P15</span>Horizon partagé<span class="pick">Sélection</span></h3>
+<p>Le premier logo, mais l&#x27;horizon s&#x27;allume vert à gauche et rouge à droite : la planète hésite.</p>
 </article>
 <article class="card">
-<img class="icon" src="img/N8.jpg" alt="Icône « Lever de soleil orbital »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N8.jpg" alt="" class="s60"><img src="img/N8.jpg" alt="" class="s40"><img src="img/N8.jpg" alt="" class="s20"></div>
-<h3><span class="id">N8</span>Lever de soleil orbital</h3>
-<p>Le soleil qui surgit derrière la Terre, vu depuis l&#x27;orbite : l&#x27;instant où tout s&#x27;allume.</p>
-</article>
-<article class="card">
-<img class="icon" src="img/N9.jpg" alt="Icône « Terre sur vert »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N9.jpg" alt="" class="s60"><img src="img/N9.jpg" alt="" class="s40"><img src="img/N9.jpg" alt="" class="s20"></div>
-<h3><span class="id">N9</span>Terre sur vert</h3>
-<p>La Terre en deux tons sur le vert du oui. La plus lisible en petit.</p>
-</article>
-<article class="card">
-<img class="icon" src="img/N10.jpg" alt="Icône « Carte des votes »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N10.jpg" alt="" class="s60"><img src="img/N10.jpg" alt="" class="s40"><img src="img/N10.jpg" alt="" class="s20"></div>
-<h3><span class="id">N10</span>Carte des votes<span class="pick">Coup de cœur</span></h3>
-<p>Les continents colorés comme un résultat : chaque région a voté vert ou rouge.</p>
-</article>
-<article class="card">
-<img class="icon" src="img/N11.jpg" alt="Icône « Les liens »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N11.jpg" alt="" class="s60"><img src="img/N11.jpg" alt="" class="s40"><img src="img/N11.jpg" alt="" class="s20"></div>
-<h3><span class="id">N11</span>Les liens</h3>
-<p>Des arcs vert et rouge relient les villes : les avis voyagent d&#x27;un pays à l&#x27;autre.</p>
-</article>
-<article class="card">
-<img class="icon" src="img/N12.jpg" alt="Icône « Jour vert, nuit rouge »" width="640" height="640" loading="lazy">
-<div class="sizes" aria-hidden="true"><img src="img/N12.jpg" alt="" class="s60"><img src="img/N12.jpg" alt="" class="s40"><img src="img/N12.jpg" alt="" class="s20"></div>
-<h3><span class="id">N12</span>Jour vert, nuit rouge<span class="pick">Coup de cœur</span></h3>
-<p>Le jour est vert, la nuit est rouge : la planète tourne entre deux avis.</p>
+<svg class="icon" viewBox="0 0 100 100" role="img" aria-label="Icône Version claire"><image href="img/P16.jpg" x="0" y="0" width="100" height="100"/></svg>
+<div class="sizes"><svg class="s60" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P16.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s40" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P16.jpg" x="0" y="0" width="100" height="100"/></svg><svg class="s20" viewBox="0 0 100 100" aria-hidden="true"><image href="img/P16.jpg" x="0" y="0" width="100" height="100"/></svg></div>
+<h3><span class="id">P16</span>Version claire</h3>
+<p>La Terre sur fond clair, pour voir l&#x27;icône sans le noir spatial.</p>
 </article>
 </div>
 </section>
-<footer>Pistes de travail pour Take.</footer>
 </div>
 </body>
 </html>
